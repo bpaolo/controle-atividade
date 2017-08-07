@@ -118,7 +118,6 @@ class AtividadeController extends Controller
             case 1:
                 $result = 'Ativo';
                 break;
-            
             default:
                 $result = null;
                 break;
