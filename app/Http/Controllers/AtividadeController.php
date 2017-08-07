@@ -112,12 +112,15 @@ class AtividadeController extends Controller
 
     private function activityStatus($situacao){
         switch ($situacao) {
+            case 0:
+                $result = 'Inativo';
+                break;
             case 1:
                 $result = 'Ativo';
                 break;
             
             default:
-                $result = 'Inativo';
+                $result = null;
                 break;
         }
         return $result;
